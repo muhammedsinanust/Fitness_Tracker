@@ -23,9 +23,9 @@ spec:
     spec:
       containers:
         - name: fitness-tracker-app
-          image: muhammedsinanust/sneakx
+          image: pulkit197/fitness_tracker-master-copy3-fitness-app:latest
           ports:
-            - containerPort: 3000
+            - containerPort: 5000
           # ✔ All configMap vars removed
           # ✔ Direct env variables added
           env:
