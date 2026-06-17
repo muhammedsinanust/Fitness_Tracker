@@ -44,10 +44,10 @@ steps:
     kubernetesServiceConnection: 'aks-connection'
     namespace: 'default'
     manifests: |
-      Fitness_Chart/templates/app-deployment.yaml // add your deployment file name with file location
-      Fitness_Chart/templates/mongodb-deployment.yaml // add your deployment file name with file location
+      Fitness_Chart/templates/app-deployment.yaml
+      Fitness_Chart/templates/mongodb-deployment.yaml
     containers: |
-      snansacr.azurecr.io/$(imageRepository):$(imageTag)    //here add your azure conatiner registry login servername
+      snansacr.azurecr.io/$(imageRepository):$(imageTag)
  
 # Slack Notification
 - task: Bash@3
