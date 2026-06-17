@@ -44,8 +44,8 @@ steps:
     kubernetesServiceConnection: 'aks-connection'
     namespace: 'default'
     manifests: |
-      app-deployment.yaml
       mongodb-deployment.yaml
+      app-deployment.yaml
     containers: |
       snansacr.azurecr.io/$(imageRepository):$(imageTag)
  
